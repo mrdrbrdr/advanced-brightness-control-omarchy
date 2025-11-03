@@ -1,4 +1,4 @@
-# Logarithmic Brightness Control
+# Advanced Brightness Control ([Omarchy](https://omarchy.org/) )
 
 ![ezgif-8d7f443dbb5b5d](https://github.com/user-attachments/assets/167adc19-e443-405f-96c0-adce993bde06)
 
