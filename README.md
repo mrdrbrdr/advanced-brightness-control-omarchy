@@ -2,14 +2,6 @@
 
 Advanced screen brightness control system with logarithmic scaling for ultra-low brightness levels on Linux/Wayland. Perfect for users who need extremely fine brightness control in dark environments while maintaining intuitive control for normal use.
 
-## Features
-
-- **Ultra-Low Brightness Range**: Scale down to 1/400 of maximum brightness (0.25%)
-- **Logarithmic Scaling**: Fine-grained 1% increments in the 0-5% range
-- **Standard Increments**: Normal 5% steps from 5-100%
-- **Visual Feedback**: On-screen display (OSD) with progress bar
-- **Zero Interference**: Custom OSD implementation prevents system override of brightness values
-
 ## How It Works
 
 The script provides exponential spacing at low brightness levels for precise control in dark environments:
@@ -181,26 +173,6 @@ This brightness control system is perfect for:
 2. Start swayosd if needed: `swayosd-server &`
 3. Script will work without OSD, just won't show visual feedback
 
-### Brightness changes too slowly/quickly
-Adjust the target ladder in the script to add more or fewer steps.
 
-## Contributing
 
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest features
-- Submit pull requests
-- Share your custom brightness curves
-
-## License
-
-MIT License - see LICENSE file for details
-
-## Credits
-
-Developed as part of the [Omarchy](https://omarchy.org/) project configuration.
-
-Special thanks to the developers of:
-- [brightnessctl](https://github.com/Hummer12007/brightnessctl)
-- [SwayOSD](https://github.com/ErikReider/SwayOSD)
-- [Hyprland](https://hyprland.org/)
+Contributions are welcome
