@@ -46,24 +46,34 @@ All dependencies are pre-installed in Omarchy:
 
 ## Installation
 
+**1. Install the script:**
 ```bash
-# Clone and install
-git clone https://github.com/mrdrbrdr/advanced-brightness-control-omarchy.git
-cd advanced-brightness-control-omarchy
+git clone https://github.com/mrdrbrdr/ultra-low-brightness.git
+cd ultra-low-brightness
 mkdir -p ~/.local/bin
 cp brightness-control ~/.local/bin/
 chmod +x ~/.local/bin/brightness-control
 ```
 
-Add to `~/.config/hypr/bindings.conf`:
+**2. Configure Hyprland:**
 
+Add these lines to `~/.config/hypr/bindings.conf`:
 ```conf
+# Unbind default brightness controls
 unbind = ,XF86MonBrightnessUp
 unbind = ,XF86MonBrightnessDown
+
+# Bind ultra-low brightness controls
 bindeld = ,XF86MonBrightnessUp, Logarithmic brightness up, exec, ~/.local/bin/brightness-control up
 bindeld = ,XF86MonBrightnessDown, Logarithmic brightness down, exec, ~/.local/bin/brightness-control down
 ```
 
+**3. Reload Hyprland config:**
+```bash
+hyprctl reload
+```
+
+Done! Your brightness keys now use logarithmic scaling.
 ## How It Works
 
 **The swayosd Problem**: `swayosd-client --brightness X` actively sets hardware brightness to X%, overriding logarithmic values.
