@@ -19,6 +19,8 @@ where you actually need them, while keeping normal 5% steps above that.
 
 ## How It Works
 
+<img width="580" height="432" alt="image" src="https://github.com/user-attachments/assets/307cd149-745b-4701-9070-aa86541f76d1" />
+
 The script provides exponential spacing at low brightness levels for precise control in dark environments:
 
 | Display % | Raw Value | Notes |
